@@ -1,0 +1,29 @@
+VERIFY.START
+
+CHECK ROOM.room      : OK
+CHECK X.room         : OK
+CHECK ∞_0M           : OK
+CHECK 9×9-Operator.me: OK
+CHECK octa²          : OK
+CHECK octa³          : OK
+
+CHECK CSV:
+ - achse-wert-5.csv          : OK
+ - achse-wert-6.csv          : OK
+ - dimension-bedeutung-6.csv : OK
+ - engine-bedeutung-4.csv    : OK
+ - k-rper-energie-6e-6.csv   : OK
+ - modul-geo-5.csv           : OK
+ - repo-signatur-4.csv       : OK
+ - respo-achse-4.csv         : OK
+ - ordner-ebene-12.csv       : OK
+
+CHECK RAW:
+ - pime.raw                  : OK
+
+CHECK 1D:
+FORMULA = Σ( Datei × Achse × Respo × RAW × Meta × Operator )
+STATUS  = COMPLETE
+
+VERIFY.END
+STATUS = 100%
