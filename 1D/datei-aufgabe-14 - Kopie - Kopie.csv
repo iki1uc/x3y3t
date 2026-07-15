@@ -1,0 +1,15 @@
+﻿Datei,Aufgabe,Move
+CPU.html,Engine‑Wert,AttachmentWert
+GPU.html,Hardware‑Engine,FINALCLOU
+ram.html,Speicher‑Engine,FINALCLOU
+IKpiKI.html,Logik‑Engine,FINALCLOU
+raw.html,Vollständiger BestMove,BestMove
+rom.html,Ursache‑Wirkung,ROME
+².html,AttachmentWert,AttachmentWert
+³.html,CLOU‑Engine,FINALCLOU
+exa.html,Matrix‑Archiv,Matrix
+64x64.html,Meta‑Matrix,Matrix‑Objekt
+81_81_1.js,Geometrie‑Engine,geoAxes / geoLAGE / geoORT
+9h9.js,Identität,respo9hoch9
+index.html,ROOT,Identität
+x.html,Reserve,"alles, was später kommt"

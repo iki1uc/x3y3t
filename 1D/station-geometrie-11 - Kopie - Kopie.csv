@@ -1,0 +1,12 @@
+﻿Station,Geometrie,Wirkung
+ID,Tetraeder (4 Punkte),Identität / 4e‑Re
+RESPO,Hexagon (6 Punkte),Systemkern / 6e
+LAGE,Würfel (8 Punkte),Raum / Position
+SCAN,Dodecagon (12 Punkte),Gesetz / 6d
+360°,Orbit‑Ring,Rotation / Zeit
+6e,Energie‑Stern,Energieachsen
+ORT,Dreieck + Hexagon,Ereignis + Raum
+BEST‑SCORE,Octaeder,Score
+BEST‑MATRIX,6×6 Raster,Bewertung
+BEST‑ORBIT,Doppel‑Orbit,Wirkung
+BEST‑IDENTITY,Spiegel‑Octaeder,Signatur

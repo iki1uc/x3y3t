@@ -1,0 +1,6 @@
+﻿Problem,Ursache,Lösung
+Seite lädt nicht,Pages nicht aktiviert,Settings → Pages → Source = main
+404 Fehler,index.html nicht im Root,index.html in Root verschieben
+Leere Seite,falscher Dateiname,exakt „index.html“ verwenden
+ID.html lädt nicht,kein Routing,über index.html verlinken
+Nur Text erscheint,falscher Branch,Pages auf main setzen
