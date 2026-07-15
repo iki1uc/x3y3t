@@ -2,7 +2,7 @@
 <html lang="de">
 <head>
 <meta charset="UTF-8">
-<title>x3y3t · RAW · Mystery · ROOTanator · 1D</title>
+<title>x3y3t · NC.raw · ALL×ALL · Vollsystem</title>
 
 <style>
 body { background:#000; color:#0f0; font-family:Consolas; padding:20px; }
@@ -16,93 +16,47 @@ canvas { background:#111; border:1px solid #333; margin-top:20px; }
 
 <body>
 
-<h1>x3y3t · RAW · Mystery · ROOTanator · 1D</h1>
+<h1>x3y3t · NC.raw · ALL×ALL · Vollsystem</h1>
 
 <pre>
 ROOT      = x3y3t
-SYSTEM    = NC.raw
-MODE      = 1D / 6E / 6D / 360°
-OPERATOR  = 9×9
-META      = ∞_0M
-OCTA      = octa² + octa³
+SYSTEM    = NC.raw.ALL×ALL
+BOOT      = NC.room (boot.html)
+MODES     = 1D · 6E · 6D · 12E · ∞ · 9×9 · octa² · octa³
 READY     = 100%
 UTF8      = OK
 </pre>
 
 <section>
-<h2>1D · Formel</h2>
-<pre>
-1D = Σ( Datei[i] × Achse[i] × Respo[i] × RAW[i] × Meta[i] × Operator[i] )
-     für i = 1 … n
-</pre>
+<h2>BOOT · NC.room</h2>
+<a href="./boot.html">NC.room · System-Anker</a>
 </section>
 
 <section>
-<h2>ROOTanator · Kern</h2>
-<a href="./ROOM.room">ROOM.room</a>
-<a href="./X.room">X.room</a>
-<a href="./∞_0M">∞_0M · Prä-Matrix</a>
+<h2>ALL×ALL · Indizes</h2>
+<a href="./12×12.ALL×ALL">12×12 · ALL×ALL</a>
+<a href="./∞.ALL×ALL">∞ · ALL×ALL</a>
+<a href="./6E.ALL×ALL">6E · ALL×ALL</a>
+<a href="./NC.raw.ALL×ALL">NC.raw · ALL×ALL</a>
+<a href="./ALLIN.ALLOUT">ALLIN · ALLOUT</a>
+</section>
+
+<section>
+<h2>Operator · 9×9</h2>
 <a href="./9×9‑Operator.me">9×9‑Operator.me</a>
 </section>
 
 <section>
 <h2>OCTA · System</h2>
-<a href="./octa²">octa² · Inhalt</a>
-<a href="./octa³">octa³ · Achsen</a>
+<a href="./octa²">octa²</a>
+<a href="./octa³">octa³</a>
 </section>
 
 <section>
-<h2>CSV · 1D-Daten</h2>
-<a href="./achse-wert-5.csv">achse-wert-5.csv</a>
-<a href="./achse-wert-6.csv">achse-wert-6.csv</a>
-<a href="./dimension-bedeutung-6.csv">dimension-bedeutung-6.csv</a>
-<a href="./engine-bedeutung-4.csv">engine-bedeutung-4.csv</a>
-<a href="./k-rper-energie-6e-6.csv">körper-energie-6e-6.csv</a>
-<a href="./modul-geo-5.csv">modul-geo-5.csv</a>
-<a href="./repo-signatur-4.csv">repo-signatur-4.csv</a>
-<a href="./respo-achse-4.csv">respo-achse-4.csv</a>
-<a href="./ordner-ebene-12.csv">ordner-ebene-12.csv</a>
-</section>
-
-<section>
-<h2>SCAN · System</h2>
-<a href="./FINAL SCAN">FINAL SCAN</a>
-<a href="./FINAL SCAN (1)">FINAL SCAN (1)</a>
-<a href="./ORT.respo">ORT.respo</a>
-<a href="./ORT (1) - Kopie - Kopie.respo">ORT (1) Kopie</a>
-</section>
-
-<section>
-<h2>pime · 6D / RAW / calc</h2>
-<a href="./pime (1).6d">pime (1).6d</a>
-<a href="./pime (1).calc">pime (1).calc</a>
-<a href="./pime (2).6d">pime (2).6d</a>
-<a href="./pime (2).calc">pime (2).calc</a>
-<a href="./pime - Kopie (2) - Kopie.raw">pime.raw</a>
-</section>
-
-<section>
-<h2>Pipeline · Stufen</h2>
-<a href="./pipeline-stufe-datei-7 - Kopie - Kopie.csv">pipeline-stufe-7.csv</a>
-</section>
-
-<section>
-<h2>Fehleranalyse</h2>
-<a href="./problem-ursache-5 - Kopie - Kopie.csv">problem-ursache-5.csv</a>
-<a href="./k-rper-differenz-6.csv">körper-differenz-6.csv</a>
-<a href="./k-rper-differenz-6 (1).csv">körper-differenz-6 (1).csv</a>
-</section>
-
-<section>
-<h2>Signaturen</h2>
-<a href="./nr-name-3 - Kopie - Kopie.csv">nr-name-3.csv</a>
-<a href="./nr-name-4 - Kopie - Kopie.csv">nr-name-4.csv</a>
-<a href="./repo-3-buchstaben-4.csv">repo-3-buchstaben-4.csv</a>
-</section>
-
-<section>
-<h2>Stationen · Geometrie</h2>
-<a href="./station-geometrie-11 - Kopie - Kopie.csv">station-geometrie-11.csv</a>
+<h2>1D · Kern</h2>
+<a href="./1D/ROOM.room">ROOM.room</a>
+<a href="./1D/X.room">X.room</a>
+<a href="./1D/∞_0M">∞_0M</a>
 </section>
 
 <section>
@@ -111,7 +65,7 @@ UTF8      = OK
 </section>
 
 <script>
-// --- 1D SIGNATURE RENDERER ---
+// --- ALL×ALL RENDERER ---
 const c = document.getElementById("sigCanvas");
 const x = c.getContext("2d");
 let t = 0;
@@ -119,7 +73,7 @@ let t = 0;
 function renderSignature() {
     x.clearRect(0,0,c.width,c.height);
 
-    // 1D Puls
+    // NC.raw Pulse
     x.strokeStyle = "#0f0";
     x.lineWidth = 3;
     x.beginPath();
@@ -127,18 +81,25 @@ function renderSignature() {
     x.lineTo(480,150 + Math.sin(t)*40);
     x.stroke();
 
-    // 9×9 Operator Orbit
+    // 9×9 Orbit
     x.strokeStyle = "#6cf";
     x.lineWidth = 2;
     x.beginPath();
     x.arc(250,150,80 + Math.sin(t*2)*10,0,Math.PI*2);
     x.stroke();
 
-    // ∞_0M Blink
+    // ∞ Blink
     if(Math.sin(t*3) > 0.8){
         x.fillStyle = "#f00";
         x.fillRect(10,10,20,20);
     }
+
+    // 12×12 Pulse
+    x.strokeStyle = "#ff0";
+    x.lineWidth = 2;
+    x.beginPath();
+    x.arc(250,150,40 + Math.sin(t*4)*5,0,Math.PI*2);
+    x.stroke();
 
     t += 0.05;
     requestAnimationFrame(renderSignature);
