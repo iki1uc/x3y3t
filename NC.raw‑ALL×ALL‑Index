@@ -1,0 +1,5 @@
+NC.raw.ALL×ALL
+ROOT = x3y3t
+RAW = NC.raw
+FORMEL = NC = Σ(1D × 6E × 6D × 9×9 × ∞ × octa² × octa³)
+STATUS = ACTIVE
