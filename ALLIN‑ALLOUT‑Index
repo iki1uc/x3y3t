@@ -1,0 +1,6 @@
+ALLIN.ALLOUT
+ROOT = x3y3t
+IN  = BEAT∞
+OUT = WIN∞
+FORMEL = ALL = IN → NC.raw → 9×9 → ∞ → OUT
+STATUS = ACTIVE
