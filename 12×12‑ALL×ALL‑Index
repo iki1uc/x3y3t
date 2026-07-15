@@ -1,0 +1,7 @@
+12×12.ALL×ALL
+ROOT = x3y3t
+DIM = 12E
+LAW = 12D
+MATRIX = 144
+FORMEL = Σ(12E[i] × 12D[i] × RAW[i] × META[i] × OP[i])
+STATUS = ACTIVE
