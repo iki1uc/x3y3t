@@ -1,1 +1,91 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<title>iki1uc · 6E · Vollsystem</title>
 
+<style>
+body { background:#000; color:#0f0; font-family:Consolas; padding:20px; }
+h1, h2 { color:#6cf; }
+section { margin-bottom:30px; }
+a { color:#6cf; display:block; margin:6px 0; }
+pre { background:#111; border:1px solid #333; padding:12px; }
+canvas { background:#111; border:1px solid #333; margin-top:20px; }
+</style>
+</head>
+
+<body>
+
+<h1>iki1uc · 6E · Vollsystem</h1>
+
+<pre>
+ROOT   = iki1uc
+SYSTEM = 6E
+MODE   = 12E / 6D / 360°
+AXI    = Voll
+API    = Aktiv
+READY  = 100%
+</pre>
+
+<section>
+<h2>Module</h2>
+<a href="./ID.html">ID · Identität</a>
+<a href="./GEO.html">GEO · Raum</a>
+<a href="./FREQ.html">FREQ · Frequenz</a>
+<a href="./VISIO.t.html">VISIO · Technik</a>
+<a href="./VISIO.h.html">VISIO · Hardware</a>
+<a href="./VISIO.b.html">VISIO · Benchmark</a>
+<a href="./README.md">README · Befunde</a>
+<a href="./6E.respo">6E.respo · Systemkern</a>
+</section>
+
+<section>
+<h2>6E · Signatur-Renderer</h2>
+<canvas id="sigCanvas" width="500" height="300"></canvas>
+</section>
+
+<script>
+// --- 6E SIGNATUR-RENDERER (High-Class) ---
+const c = document.getElementById("sigCanvas");
+const x = c.getContext("2d");
+
+let t = 0;
+
+function renderSignature() {
+    x.clearRect(0,0,c.width,c.height);
+
+    // 6e Energieachsen (Rotation)
+    const colors = ["#0f0","#6cf","#0ff","#9f0","#f90","#f00"];
+    for(let i=0;i<6;i++){
+        x.strokeStyle = colors[i];
+        x.lineWidth = 2;
+        x.beginPath();
+        x.arc(250,150,40 + i*10 + Math.sin(t+i)*5,0,Math.PI*2);
+        x.stroke();
+    }
+
+    // 6d Gesetzachsen (Scan)
+    x.fillStyle = "#6cf";
+    x.fillRect(20,260,460*(0.5+Math.sin(t)/2),10);
+
+    // 12e Spiegel (Puls)
+    x.strokeStyle = "#0f0";
+    x.lineWidth = 3;
+    x.beginPath();
+    x.arc(250,150,120 + Math.sin(t*2)*10,0,Math.PI*2);
+    x.stroke();
+
+    // Octa³ Blink
+    if(Math.sin(t*3) > 0.8){
+        x.fillStyle = "#f00";
+        x.fillRect(10,10,20,20);
+    }
+
+    t += 0.05;
+    requestAnimationFrame(renderSignature);
+}
+renderSignature();
+</script>
+
+</body>
+</html>
