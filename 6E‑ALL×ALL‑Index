@@ -1,0 +1,6 @@
+6E.ALL×ALL
+ROOT = x3y3t
+ENERGIE = 6E
+AXEN = E1…E6
+FORMEL = 6E = Σ(E[i] × RAW[i] × ROOM[i])
+STATUS = ACTIVE
