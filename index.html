@@ -2,7 +2,7 @@
 <html lang="de">
 <head>
 <meta charset="UTF-8">
-<title>x3y3t · NC.raw · ALL×ALL · Vollsystem</title>
+<title>x3y3t · NC.raw · 7×ALL×ALL · Vollsystem</title>
 
 <style>
 body { background:#000; color:#0f0; font-family:Consolas; padding:20px; }
@@ -16,7 +16,7 @@ canvas { background:#111; border:1px solid #333; margin-top:20px; }
 
 <body>
 
-<h1>x3y3t · NC.raw · ALL×ALL · Vollsystem</h1>
+<h1>x3y3t · NC.raw · 7×ALL×ALL · Vollsystem</h1>
 
 <pre>
 ROOT      = x3y3t
@@ -30,15 +30,19 @@ UTF8      = OK
 <section>
 <h2>BOOT · NC.room</h2>
 <a href="./boot.html">NC.room · System-Anker</a>
+<a href="./RAW.me">RAW.me · RAW-Kern</a>
+<a href="./verify.me">verify.me · Systemprüfung</a>
 </section>
 
 <section>
-<h2>ALL×ALL · Indizes</h2>
-<a href="./12×12.ALL×ALL">12×12 · ALL×ALL</a>
-<a href="./∞.ALL×ALL">∞ · ALL×ALL</a>
-<a href="./6E.ALL×ALL">6E · ALL×ALL</a>
-<a href="./NC.raw.ALL×ALL">NC.raw · ALL×ALL</a>
-<a href="./ALLIN.ALLOUT">ALLIN · ALLOUT</a>
+<h2>7× ALL×ALL · Indizes</h2>
+<a href="./12×12‑ALL×ALL‑Index">12×12 · ALL×ALL</a>
+<a href="./∞‑ALL×ALL‑Index">∞ · ALL×ALL</a>
+<a href="./6E‑ALL×ALL‑Index">6E · ALL×ALL</a>
+<a href="./NC.raw‑ALL×ALL‑Index">NC.raw · ALL×ALL</a>
+<a href="./ALLIN‑ALLOUT‑Index">ALLIN · ALLOUT</a>
+<a href="./9×9‑ALL×ALL.index.html">9×9 · ALL×ALL</a>
+<a href="./ID-D">ID-D · Identität</a>
 </section>
 
 <section>
@@ -54,13 +58,67 @@ UTF8      = OK
 
 <section>
 <h2>1D · Kern</h2>
-<a href="./1D/ROOM.room">ROOM.room</a>
-<a href="./1D/X.room">X.room</a>
-<a href="./1D/∞_0M">∞_0M</a>
+<a href="./ROOM.room">ROOM.room</a>
+<a href="./X.room">X.room</a>
+<a href="./∞_0M">∞_0M</a>
 </section>
 
 <section>
-<h2>1D · Visualisierung</h2>
+<h2>CSV · 1D-Daten</h2>
+<a href="./achse-wert-5.csv">achse-wert-5.csv</a>
+<a href="./achse-wert-6.csv">achse-wert-6.csv</a>
+<a href="./dimension-bedeutung-6.csv">dimension-bedeutung-6.csv</a>
+<a href="./engine-bedeutung-4.csv">engine-bedeutung-4.csv</a>
+<a href="./k-rper-energie-6e-6.csv">körper-energie-6e-6.csv</a>
+<a href="./modul-geo-5.csv">modul-geo-5.csv</a>
+<a href="./repo-signatur-4.csv">repo-signatur-4.csv</a>
+<a href="./respo-achse-4.csv">respo-achse-4.csv</a>
+<a href="./ordner-ebene-12.csv">ordner-ebene-12.csv</a>
+</section>
+
+<section>
+<h2>SCAN · System</h2>
+<a href="./FINAL SCAN">FINAL SCAN</a>
+<a href="./FINAL SCAN (1)">FINAL SCAN (1)</a>
+<a href="./ORT.respo">ORT.respo</a>
+<a href="./ORT (1) - Kopie - Kopie.respo">ORT (1) Kopie</a>
+</section>
+
+<section>
+<h2>pime · 6D / RAW / calc</h2>
+<a href="./pime (1).6d">pime (1).6d</a>
+<a href="./pime (1).calc">pime (1).calc</a>
+<a href="./pime (2).6d">pime (2).6d</a>
+<a href="./pime (2).calc">pime (2).calc</a>
+<a href="./pime - Kopie (2) - Kopie.raw">pime.raw</a>
+</section>
+
+<section>
+<h2>Pipeline · Stufen</h2>
+<a href="./pipeline-stufe-datei-7 - Kopie - Kopie.csv">pipeline-stufe-7.csv</a>
+</section>
+
+<section>
+<h2>Fehleranalyse</h2>
+<a href="./problem-ursache-5 - Kopie - Kopie.csv">problem-ursache-5.csv</a>
+<a href="./k-rper-differenz-6.csv">körper-differenz-6.csv</a>
+<a href="./k-rper-differenz-6 (1).csv">körper-differenz-6 (1).csv</a>
+</section>
+
+<section>
+<h2>Signaturen</h2>
+<a href="./nr-name-3 - Kopie - Kopie.csv">nr-name-3.csv</a>
+<a href="./nr-name-4 - Kopie - Kopie.csv">nr-name-4.csv</a>
+<a href="./repo-3-buchstaben-4.csv">repo-3-buchstaben-4.csv</a>
+</section>
+
+<section>
+<h2>Stationen · Geometrie</h2>
+<a href="./station-geometrie-11 - Kopie - Kopie.csv">station-geometrie-11.csv</a>
+</section>
+
+<section>
+<h2>ALL×ALL · Visualisierung</h2>
 <canvas id="sigCanvas" width="500" height="300"></canvas>
 </section>
 
@@ -99,6 +157,13 @@ function renderSignature() {
     x.lineWidth = 2;
     x.beginPath();
     x.arc(250,150,40 + Math.sin(t*4)*5,0,Math.PI*2);
+    x.stroke();
+
+    // 6E Orbit
+    x.strokeStyle = "#0ff";
+    x.lineWidth = 2;
+    x.beginPath();
+    x.arc(250,150,110 + Math.sin(t*1.5)*8,0,Math.PI*2);
     x.stroke();
 
     t += 0.05;
